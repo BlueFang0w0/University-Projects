@@ -1,0 +1,479 @@
+   /* Alot of the css below is re-used as index was originally the only page. */
+
+      
+    html body{ /* This is to handle my body formatting and this allows me to add my texture that you see in the background. I try to stick to percentages to work better with resizing and I hide overflow because it is not needed. */
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        background-color: rgb(32, 32, 32);
+        background-image: url("http://localhost/Game_Website/Assets/Background_Texture.svg");
+        background-size:     26%;   
+        overflow:hidden;
+                         
+        
+    }
+
+    .text_preset{ /* I created a small preset for my future text which I will use offten. */
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        font-size: 16px; 
+        
+    }
+
+    .container div{ /* THIS IS MAINLY RELATED TO INDEX PAGE. I am making my grid and stuff below is me adjusting it to fit propperly. */
+        padding: 10px;
+        border: 0px solid rgb(0, 0, 0);
+    
+    }
+
+    .container{ 
+        width:100vw;
+        height:100vh;
+        display: grid;
+        grid-template: 200px 100px 1fr 70px/  repeat(1 , 1fr);
+        gap: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        
+        
+        
+    }
+
+    .mini_container{ /* I sometimes stack grids to allow for precise control and easy positioning. */
+        
+        display: grid;
+        grid-template: repeat(2 , 3fr) /  repeat(3 , 3fr);
+        gap: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.70);
+        position: relative;
+        overflow-y:scroll; 
+        
+    }
+
+    .header{ 
+        position: relative;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: rgba(128, 128, 128, 0.70);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        overflow: hidden;
+
+    }
+
+    .menu_bar{ /* Flex is sometimes used too for easier control. As grid at times is a little overkill and flex is simpler. */
+        background-color: rgb(36, 36, 36);
+        border: 3px solid black !important; 
+        grid-row: 2 / span 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        justify-content:center;
+        overflow: hidden;
+        
+    }
+
+    .menu_button{
+        width:350px;
+        text-align: center;
+        
+    }
+
+    .user_input_N_P_preset{ /* This is a preset for my input boxes. No need to keep re-making them. */
+        position: relative;
+        margin-left: 17%;
+        margin-top: 10px;
+        width:60%;
+        height: 70%;
+        border-radius: 10px;
+        border:3px solid black;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        outline-color: white;
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        
+    }
+
+    #ui_error_space{
+        padding: 5px; 
+        width: 95%;
+        border-radius: 10px; 
+        border:3px solid red; 
+        background-color: darkred; 
+        display: none;
+    }
+
+    #ui_interaction_container{ /* Simply the gray container you see on home page in the middle. Making it looks nice. */
+        border-bottom-left-radius: 20px; 
+        border-bottom-right-radius: 20px; 
+        background-color: rgba(128, 128, 128, 1); 
+        border: 3px solid black !important; 
+    }
+
+    .date_birth_input{ /* Preset for smaller text boxes. */
+        width:20%;
+        height: 30%;
+        border-radius: 10px;
+        border:3px solid black;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        outline-color: white;
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 5%;
+        
+           
+    }
+
+    #user_input_checkbox_test{ /* Helps alighn my checkbox. */
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+
+    #date_birth_text{ 
+        position: absolute;
+        margin-top: 0%;
+        margin-left: 5%;
+    }
+
+    #Nerve_Boost_Logo{ /* My attempts at making the logo position propperly. Absolute because it is animated. */
+        position: absolute;
+        top: 0%;
+        width:100%;
+        height:100%;
+        
+    }
+
+    .separator /* Those small white bars in the nav bar. */
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50%;
+        
+    }
+
+    .button_link{ /* Here I am attempting to style my epic looking light bulb buttons on the nav bar. */
+        font-family: Arial, Helvetica, sans-serif;
+        position:relative;
+        display: inline-block;
+        color: #ffffff;
+        text-transform:uppercase;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 250%;
+        overflow: hidden;
+        transition: 0.2s;
+        font-weight: bold;
+        vertical-align: middle;
+        line-height: 130%;
+        height: 100%;
+        width: 100%;
+        border-radius: 35px;
+        background-color: #5f5f5f00;;
+        
+    }
+
+    .button_link:hover{ /* Little bit of animation to make them extra fun. */
+        color:#000000 !important;
+        background: #ffffff;
+        box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff;
+       
+    }
+
+    #mid_content{ /* Just more positioning with grid. */
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+    }
+
+    #ui_rol_interface{
+        position: relative;
+        top: 10%;
+    }
+
+    .ui_low_button{ /* Simply my buttons in the home mid menu for user interaction with login and register. */
+        border-radius: 10px;
+        border: none;
+        color: black;
+        background-color: orange;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2.5% 5%;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s;
+    }
+
+    .ui_low_button:hover{ /* They come with an awesome transition. */
+        background-color: rgb(255, 255, 255); 
+    }
+
+    .footer{ /* Mostly adjusting the sizing, position and simply giving highlight and colour making it look nice. Footer means footer. */
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        position:sticky;
+        bottom: 10px;
+        width: 99%;
+        left:0.5%;
+
+        background-color: rgb(36, 36, 36);
+        border: 3px solid black ; 
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-sizing: border-box;
+        
+        
+    
+    }
+
+    .footer_refr{ /* Had to play around with footer content positioning. */
+        display: flex;
+        height: inherit;
+        width: 33%;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        justify-content: center;
+
+    }
+    .footer_refr > a{ 
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #footer_text{ /* Making that smart looking copyright fit nicely. */
+        box-sizing: border-box;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    #music_player{ /* Fitting the music player just right. */
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.8%;
+        margin-bottom: auto;
+    }
+    
+    
+ /* SCORE PAGE SPECIFIC CSS*/
+    
+#score_container_main{ /* Always need a container for everything and the container needs adjustments. */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.70);
+    position: relative;
+    
+} 
+
+#score_container_main div { /* Adressing container children. */
+    position: relative;
+}
+
+#scoreboard_space{ /* Is inside the container defining the space formatting. */
+    display: grid;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    grid-template-rows: auto 1fr 10%;
+    grid-template-columns: 1fr;
+    background-color: rgb(36, 36, 36);
+    border: 3px solid black;
+}
+
+#score_nav{ /* Nav bar of the scoreboard.  */
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    
+}
+#score_nav div{
+    background-color: rgb(0,128,128);
+    border:1px solid black;
+    font-weight: bold;
+}
+
+
+#scores_data_container{ /* Formats the data inside scoreboard, allows up to 50 users. */
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: repeat(50, 10%);
+    grid-row-gap: 1%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#scores_data_container div:nth-child(-n+3){ /* This is simply to give the top 3 some highlights. As in Gold, Silver, Bronze, olympic style. */
+    background-color: yellow;
+}
+
+#scores_data_container div:nth-child(n+4):nth-child(-n+6){
+    background-color: rgb(149, 210, 221);
+}
+
+#scores_data_container div:nth-child(n+7):nth-child(-n+9){
+    background-color: rgb(150, 95, 78);
+}
+
+.champion_trophies{ /* Giving the top 3 trophies near ther num. This adjusts the size to be correct. */
+    width: 40%;
+    height: 100%;
+}
+
+#scores_data_container div{
+    background-color: rgb(128, 128, 128);
+    border:1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size: 16px;
+}
+
+#player_score{ /* Formatting the player bar at the bottom of scoreboard. */
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    
+}
+#player_score div{
+    background-color: rgb(0, 0, 0);
+    border:1px solid rgb(255, 255, 255);
+    font-weight: bold;
+    color: white;
+}
+
+ /* ABOUT PAGE SPECIFIC CSS*/
+
+ #about_container{ /* Container is formatted to allow for propper positioning. */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(128, 128, 128, 0.70);
+    position: relative;
+ }
+
+ #about_game{ /* Simply format text that you see to make it look nice. */
+     grid-row: 1 / 2;
+     grid-column: 1 / 4;
+     background-color: rgb(128, 128, 128);
+     border: 1px solid black;
+ }
+
+ .image_placeholder{ /* Need game pics to do anything with these for now. */
+     grid-row: 2/4;
+     background-color:rgb(0,128,128);
+     border: 1px solid black !important;
+ }
+
+
+ /* GAME PAGE SPECIFIC CSS*/
+    /* Goes without saying but I re-used some assets from above. No need to re-make them. */
+        
+    .imgCon{
+        display: none;
+    }
+
+    .game_container{ /* Always need a mid content container. Trying to adjust it to fit  the theme. */
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: grid;
+        grid-template: 130% 130% /  100%;
+        gap: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(128, 128, 128, 0.70);
+        position: relative;
+        
+    }
+
+    .game_container div{ /* Adressing the children. */
+        padding: 0px;
+        border: 0px solid rgb(0, 0, 0); /* Found this very useful. It shows grid layout. */
+    }
+
+    #controls{ /* This is me editing the space in which the slide show will operate. Must be done for perfect fit. */
+        position: relative;
+        background-color: rgb(128, 128, 128);
+        display: table;
+        height: 100%;
+    }
+
+    #game_space{ 
+        position: relative;
+    }
+
+    #game_controls_sl{ /* This is the current image formatting that's displayed above the game canvas. */
+        position: relative;
+        top: 0%;
+        width:80%;
+        height:80%;
+        left: 5%;
+    }
+
+    .game_sl_control_button{ /* Button formatting for slideshow control allowing it to fit nicely. */
+        margin-top: 0%;
+        width: 5%;
+        height: 100%;
+        border: none;
+        color: black;
+        background-color: rgba(255, 166, 0, 0.5);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s;
+        bottom: 15%;
+        visibility: 50%;
+        
+    }
+    .game_sl_control_button:hover{ /* Animating slideshow buttons. */
+        background-color: rgb(255, 255, 255);
+    }
+
+    #mySpace{ /* This is my canvas which is controlled by my missionControl.js */
+        background-color:black;
+        border:5px solid #ffffff;
+        height: 70%;
+        width: 60%;
+        position: relative; 
+        top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #mySpace_clock{
+        padding: 30px;
+        border: 5px solid rgb(0, 0, 0);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        font-size: 30px;
+        
+    }

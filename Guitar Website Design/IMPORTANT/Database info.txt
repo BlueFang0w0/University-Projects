@@ -1,0 +1,2 @@
+The database needs to be in format Guitar_Shop.Users.
+The file provided is the users file and is the only one actually being used.

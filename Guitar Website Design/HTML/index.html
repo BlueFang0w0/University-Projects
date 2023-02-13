@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="preload" as="image" href="Assets/Search_Icon_1.svg">
+        <link rel="preload" as="image" href="Assets/Search_Icon_2.svg">
+        <link rel="preload" as="image" href="Assets/Search_Icon_3.svg">
+        <link rel="preload" as="image" href="Assets/Logo.svg">
+        <title></title>
+    </head>
+    <body id="main">
+        <div class="grid_container">
+            <!--==================================TITLE========================================-->
+            <div class="title">
+                <img src="Assets/Logo.svg" id="main_logo">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!--==================================MENU BAR========================================-->
+            <div class="menu_bar">
+                <a href="index.html" class="button_link " id="menu_bar_home_button" style="color:rgb(255, 255, 255);" >Home</a>
+                <a href="shop.html" class="button_link " style="color:rgb(255, 255, 255);" >Shop</a>
+                <a href="about.html" class="button_link " style="color:rgb(255, 255, 255);" >About</a>
+                <input placeholder="Search With: Tag or Name" id="search" type="search">
+                <button type="button" id="search_submit" class="ui_button_preset" onclick=" ">
+                    <img src="Assets/Search_Icon_1.svg" ></button>
+            </div>
+            <!--==================================CONTENT SECTION========================================-->
+            <div class="content">
+                <h1 class="content_sub1 text_preset_title">Welcome! Check out these HOT new deals!</h1>
+                <div class="content_sub1 text_preset_base" id="content_bill_container">
+                    <button type="button" class="content_ad_button1" style="margin-left: auto;" for="ad_board_space">&lt</button>
+                    <div class="ad_board" id="ad_board_space"><img src="Assets/board/slide1.jpg" ></div>
+                    <button type="button" class="content_ad_button1" style="margin-right: auto;" for="ad_board_space">&gt</button>
+                </div>
+                <hr>
+                <h1 class="content_sub1 text_preset_title" style="padding-right: 85%;">Recently Viwed</h1>
+                <hr>
+                <div class="content_sub1 text_preset_base" id="content_recent_container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+            </div>
+            <!--==================================SIDE PANNEL========================================-->
+            <div id="special">
+                <div>
+                    <div class="text_preset_title special_top_titles">LOG IN</div>
+                    <div class="text_preset_base">
+                        <input class= "user_input_N_P_preset special_ui_auth text_preset_base" placeholder="Email" id="email" type="email" autocomplete="login">
+                        <input class= "user_input_N_P_preset special_ui_auth text_preset_base" placeholder="Password" id="password" type="password" autocomplete="password">
+                        <button type="button" id="special_ui_auth_submit" class="button_preset text_preset_base" onclick=" ">Log In</button>
+                        <button type="button" id="special_ui_auth_submit" class="button_preset text_preset_base" onclick="window.location.href='register.html'">Register</button>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="text_preset_title special_top_titles">BASKET</div>
+                    <div class="text_preset_base">
+                        <div id="special_ui_basket_data" class="text_preset_base" >Your basket is empty at the moment...</div>
+                        <div id="special_ui_basket_util" class="text_preset_base" >
+                            <hr>
+                            <button type="button" id="special_ui_basket_chkout" class="button_preset text_preset_base" onclick=" ">Checkout</button>
+                            <button type="button" id="special_ui_basket_chkout" class="button_preset text_preset_base" onclick=" ">Remove Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--==================================FOOTER========================================-->
+            <div class="footer">
+                <div>
+                    <a  href="https://www.twitch.tv/"><img src="Assets/Twitch_Icon.svg"></a>
+                    <a  href="https://www.youtube.com/?gl=GB"><img src="Assets/Youtube_Icon.svg" ></a>  
+                </div>
+                <div class="text_preset_base" style="max-width: 40%;"> © 2021–2021 GFU.net All rights reserved. Powered by Middlesex University™. This is a university project where one must make an e-commerce website. This website is NOT official. © </div>
+                <div><button type="button" id="footer_admin_access_button" class="button_preset text_preset_base" onclick="window.location.href='admin.html'">Administrator Menu</button></div>
+            </div>
+        </div>
+    </body>
+</html>

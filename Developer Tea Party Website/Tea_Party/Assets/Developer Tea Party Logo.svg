@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="143.47498mm"
+   height="19.326033mm"
+   viewBox="0 0 143.47498 19.326033"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Developer Tea Party Logo.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="12.828937"
+       y="16.30344"
+       width="41.961315"
+       height="40.090427"
+       id="rect835" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="196.4437"
+     inkscape:cy="106.98318"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.6348514,-3.9692265)">
+    <text
+       xml:space="preserve"
+       id="text833"
+       style="font-size:7.05556px;line-height:0;font-family:sans-serif;white-space:pre;shape-inside:url(#rect835);" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.497px;line-height:0;font-family:sans-serif;stroke:#00ff00;stroke-width:0.264583"
+       x="4.4433703"
+       y="17.221796"
+       id="text841"
+       transform="scale(1.0009904,0.99901058)"><tspan
+         sodipodi:role="line"
+         id="tspan839"
+         x="4.4433703"
+         y="17.221796"
+         style="stroke:#00ff00;stroke-width:0.264583">DEVELOPER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.8958px;line-height:0;font-family:Mistral;-inkscape-font-specification:Mistral;stroke:#ff00ff;stroke-width:0.264583"
+       x="92.382629"
+       y="17.733068"
+       id="text845"
+       transform="scale(1.0009904,0.99901058)"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="92.382629"
+         y="17.733068"
+         style="font-size:18.8958px;stroke:#ff00ff;stroke-width:0.264583">Tea Party</tspan></text>
+  </g>
+</svg>

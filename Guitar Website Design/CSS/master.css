@@ -1,0 +1,859 @@
+@keyframes weird_effect { /* Weird animation I made. Because why not. */
+    from{
+        background-size: 3%;
+    }
+    to{
+        background-size: 20%;
+    }
+}
+
+
+html body{ /* This is to handle my body formatting and this allows me to add my texture that you see in the background. I try to stick to percentages to work better with resizing and I hide overflow because it is not needed. */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(60, 60, 60);
+    background-image: url("http://localhost/guitar-selling-website/Assets/Texture_Part.svg");
+    background-size:  15%;   
+    overflow:hidden;
+
+    animation-duration: 30s;
+    animation-name: weird_effect;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;  
+    overflow: hidden; 
+    border-style:solid; 
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+}
+
+/* Some presets */
+
+.text_preset_base{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.text_preset_title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.user_input_N_P_preset{
+    position: relative;
+    margin-top: 5px;
+    border: 2px solid black;
+    background-color: white;
+    
+}
+
+/* Standart button presets. */
+
+.button_preset{
+    background-color: rgb(0, 35, 100);
+    border: 2px solid black;
+    border-radius: 0px;
+    width: fit-content;
+    box-shadow:2px 4px gray;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.button_preset:focus{
+    outline: none;
+}
+
+.button_preset:hover{
+    background-color: white;
+}
+
+.button_preset:active{
+    background-color: orange;
+}
+
+.button_preset_2{
+    background-color: rgb(0, 120, 20);
+    border: 2px solid black;
+    border-radius: 0px;
+    width: fit-content;
+    box-shadow:2px 4px gray;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.button_preset_2:focus{
+    outline: none;
+}
+
+.button_preset_2:hover{
+    background-color: rgb(0, 85, 20);
+}
+
+.button_preset_2:active{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Admin button preset. */
+
+.admin_option_preset{
+    background-color: rgb(0, 35, 100);
+    border: 2px solid black;
+    border-radius: 0px;
+    width: 90%;
+    margin-top: 5px;
+    box-shadow:2px 4px gray;
+    text-decoration: none;
+    color: black;
+}
+
+.admin_option_preset:focus{
+    outline: none;
+}
+
+.admin_option_preset:hover{
+    background-color: white;
+}
+
+.admin_option_preset:active{
+    background-color: orange;
+}
+
+/* Extra admin button preset. */
+
+.admin_option_preset_ex{
+    background-color: rgb(0, 80, 100);
+    border: 2px solid black;
+    border-radius: 0px;
+    width: 90%;
+    margin-top: 5px;
+    box-shadow:2px 4px gray;
+    text-decoration: none;
+    color: black;
+}
+
+.admin_option_preset_ex:focus{
+    outline: none;
+}
+
+.admin_option_preset_ex:hover{
+    background-color: white;
+}
+
+.admin_option_preset_ex:active{
+    background-color: orange;
+}
+
+/* Low admin button preset.*/
+.admin_menu_low_button_preset{
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    width: 90% !important;
+    background-color: rgb(0, 150, 100);;
+    text-decoration: none;
+}
+
+.admin_menu_low_button_preset:focus{
+    outline: none;
+}
+
+.admin_menu_low_button_preset:hover{
+    background-color: white;
+}
+
+.admin_menu_low_button_preset:active{
+    background-color: orange;
+} 
+
+/* Selection List Preset */
+
+.content_registration_select{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.content_registration_select option{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* Main */
+
+#main{
+    overflow: hidden;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 5vh 75vh 10vh;
+    grid-template-areas: 
+    "title title title title title"
+    "menu_bar menu_bar menu_bar menu_bar menu_bar"
+    ". content content content special"
+    "footer footer footer footer footer";
+    grid-gap: 5px;
+    border: 2px solid black;
+}
+
+.grid_container div{
+    border: 0px solid rgb(0, 0, 0);
+}
+
+#ui_error_space{
+    padding: 5px; 
+    width: 100%;
+    height: fit-content;
+    border:3px solid red; 
+    background-color: darkred; 
+    display: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+#ui_error_space div{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+/* TITLE ================================================================================== */
+
+.title{
+    grid-area: title;
+    background-color:rgba(0, 35, 100 , 0.70);
+    display:flex;
+}
+
+.title div{
+    margin:auto;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+#main_logo{
+    position:absolute;
+    top: 15px;
+    left: 5px;
+    height: 20%;
+    width: 10%;
+    z-index: 1;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+#clock{
+    color: white !important;
+}
+
+/* MENU BAR ==================================================================================*/
+
+.menu_bar{
+    grid-area: menu_bar;
+    display:flex;
+    background-color:rgb(0, 15, 40);
+}
+
+
+.menu_bar div{
+    margin:auto;
+    width: 10%;
+    border-color: white;
+}
+
+.button_link{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+    display: inline-block;
+    color: #ffffff;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 130%;
+    height: 100%;
+    width: 25%;
+    min-width: 10px;
+    background-color: #5f5f5f00;;
+    text-align: center;
+    z-index: 0;
+}
+
+.button_link:hover{ 
+    color:#000000 !important;
+    background: #ffffff;
+}
+
+#menu_bar_home_button{
+    padding-left: 150px;
+}
+
+#search{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    border: 2px solid rgb(0, 15, 40);
+}
+
+#search:focus{
+    outline: none;
+}
+
+#search_submit{
+    position: relative;
+    background-color:  rgb(0, 15, 40);
+    border:none;
+}
+
+#search_submit:focus{
+    outline: none;
+}
+
+#search_submit img{
+    position: center;
+    height: 75%;
+    width: 75%;
+}
+
+#search_submit img:hover{
+    content: url("http://localhost/guitar-selling-website/Assets/Search_Icon_2.svg");
+}
+
+#search_submit img:active{
+    content: url("http://localhost/guitar-selling-website/Assets/Search_Icon_3.svg");
+}
+
+/* SPECIAL ==================================================================================*/
+
+#special{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    grid-area: special;
+    max-width: 90%;
+    background-color: rgba(255,255,255,0.70);
+    border: 2px solid black;
+}
+
+#special div{
+   border: none;
+}
+
+.special_top_titles{
+    background-color: rgb(0, 35, 100);
+}
+
+.special_ui_auth{
+    width: 90%;
+    left: 5%;
+}
+
+#special_ui_auth_submit{
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    width: 45% !important;
+    text-decoration: none;
+}
+
+#special_ui_basket_data{
+    position: relative;
+    overflow-y: scroll;
+    height:47vh;
+}
+
+#special_ui_basket_data::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+#special_ui_basket_data::-webkit-scrollbar:hover{
+    background-color: gray;
+    
+}
+
+#special_ui_basket_data::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+#special_ui_basket_data::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 35, 100);
+}
+
+#special_ui_basket_data button{
+    background-color: rgba(300, 300, 300, 0.50);
+    border: 2px solid gray;
+    border-radius: 0px;
+    width: 98%;
+    left: 1%;
+    right: 1%;
+    height: fit-content;
+    box-shadow:2px 4px gray;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+#special_ui_basket_data button:focus{
+    outline: none;
+}
+
+#special_ui_basket_data button:hover{
+    background-color: white;
+}
+
+
+#special_ui_basket_chkout{
+    position: relative;
+    left: 5%;
+    width: 45% !important;
+    margin-bottom: 10px;
+}
+
+.basket_item_button_preset{
+    position: relative;
+    background-color: rgb(210, 210, 210);
+    border: 2px solid black;
+    box-shadow:2px 4px gray;
+    color: black;
+    text-decoration: none;
+    border-radius: 0px;
+    left:1%;
+    right:1%;
+    width: 98%;
+    height: fit-content;
+}
+
+.basket_item_button_preset:focus{
+    outline: none;
+}
+
+.basket_item_button_preset:hover{
+    background-color: white;
+}
+
+.basket_item_button_preset:active{
+    background-color: orange;
+}
+
+
+
+/* +++++++++++++++++++++++++++ HOME +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONTENT ================================================================================== */ 
+.content{
+    grid-area: content;
+    display:relative;
+    background-color: white;
+    overflow-y:scroll; 
+    border: 2px solid black !important;
+    background-image: url("http://localhost/guitar-selling-website/Assets/Background_Stuff.svg");
+    background-size:  130%;  
+    background-position-x: -190px;
+    background-position-y: -190px;
+
+}
+
+.content_sub1{
+    margin:auto;
+    width: fit-content;
+}
+
+.ad_board{
+    margin-top: 5px;
+    width: 80%; 
+    height: 95%;
+    background-color: black;
+}
+
+.ad_board img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+#ad_board_space{
+    border: 2px dashed white;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.726);
+    
+}
+
+#image_blur{
+    position: absolute;
+    box-shadow: 0 0 10px 10px white inset;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: transparent;
+}
+
+#content_bill_container{
+    display:flex;
+    position:relative;
+    width: 80% !important; 
+    height: 50%;
+}
+
+#content_bill_container *{
+    position: relative;
+}
+
+.content_ad_button1{
+    width: 5%;
+    height: 95%;
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    visibility: 50%;
+    display: table;
+    margin-top: 0.5%;
+    margin-bottom: auto;
+}
+
+.content_ad_button1:focus{
+    outline: none;
+}
+
+.content_ad_button1:hover{
+   /* background-color: rgba(0, 35, 100 , 0.70); */
+   color: orange;
+}
+
+#content_recent_container{
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 5px;
+    border: 0px solid black;
+}
+#content_recent_container div{
+    border: 2px solid black;
+    min-width: 250px;
+}
+.content::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+.content::-webkit-scrollbar:hover{
+    background-color: gray;
+    
+}
+
+.content::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.content::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 35, 100);
+}
+
+/* +++++++++++++++++++++++++++ SHOP +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONTENT ================================================================================== */ 
+.shop_content_buy_info{
+    position: relative;
+    outline: 0px solid rgb(255, 0, 0);
+}
+
+.shop_content_sub1{
+    height: fit-content;
+    position: relative;
+    display: flex;
+}
+
+.shop_content_sub1 img{
+    max-width: 20%;
+    float:left;
+    position: relative;
+}
+
+.shop_content_sub1 button{
+    float: right;
+}
+
+#shopping_list img{
+    border: 2px solid black; 
+}
+
+/* +++++++++++++++++++++++++++ ADMIN +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONTENT ================================================================================== */ 
+#admin_menu_container{
+    overflow: hidden !important;
+    position: relative;
+    border: 2px solid black;
+}
+
+#admin_menu_container div{
+    border: 2px solid black;
+}
+
+#admin_menu_sub_container{
+    display: flex;
+    width: 100%;
+    height: 95%;
+}
+
+/* Admin control space <<< */
+
+#admin_content_control_space{
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+#admin_content_control_space::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+#admin_content_control_space::-webkit-scrollbar:hover{
+    background-color: gray;
+}
+
+#admin_content_control_space::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+#admin_content_control_space::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 35, 100);
+}
+
+
+/* +++++++++++++++++++++++++++ REGISTER +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONTENT ================================================================================== */ 
+
+.content_registration_tag{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+    text-align: center;
+}
+.content_card_reg_tag{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:15px;
+    text-align: center;  
+}
+.content_registration_input{
+    position: relative;
+    left:42%;
+    margin-bottom: 10px;
+}
+#content_submit_reg{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    left:45%;
+}
+
+.registration_separator{
+    height: fit-content;
+    background-color:rgb(0, 35, 100);
+}
+
+#content_registration_bday{
+    position: relative;
+    left: 4.5%;
+}
+
+#content_registration_bday input{
+    position: relative;
+}
+
+#content_registration_bday > input:nth-of-type(1){
+    margin-right: 20px;
+}
+
+#content_registration_bday > input:nth-of-type(3){
+    margin-left: 20px;
+}
+
+#content_registration_checkbox{
+    position: relative;
+    width:50%;
+    height: fit-content;
+    left: 25%;
+}
+
+/* Admin control data space <<< */
+
+#admin_content_data_space{
+    width: 65%;
+    height: 90%;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#admin_content_data_space::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+
+#admin_content_data_space::-webkit-scrollbar:hover{
+    background-color: gray;
+    
+}
+
+#admin_content_data_space::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+#admin_content_data_space::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(0, 35, 100);
+}
+
+.admin_menuOpt{
+    position: relative;
+    left: 5%;
+}
+
+.admin_menuExOpt{
+    position: relative;
+    left: 5%;
+}
+
+#admin_menu_id_input{
+    display: block;
+    width: 90%;
+    left: 5%;
+}
+
+#admin_menu_id_input_rm{
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    width: 90% !important;
+    background-color: red;
+    text-decoration: none;
+}
+
+#admin_menu_id_input_rm:focus{
+    outline: none;
+}
+
+#admin_menu_id_input_rm:hover{
+    background-color: white;
+}
+
+#admin_menu_id_input_rm:active{
+    background-color: orange;
+}
+
+.admin_preset1{
+    display: block;
+    width: 90%;
+    left: 5%;
+}
+
+#admin_menu_op1b_desc{
+    display: block;
+    width: 90%;
+    height: 100px;
+    left: 5%;
+    resize: none;
+}
+
+#admin_menu_op1b_addB{
+    position: relative;
+    left: 5%;
+    margin-top: 10px;
+    width: 90% !important;
+    background-color: rgb(0, 150, 100);;
+    text-decoration: none;
+}
+
+#admin_menu_op1b_addB:focus{
+    outline: none;
+}
+
+#admin_menu_op1b_addB:hover{
+    background-color: white;
+}
+
+#admin_menu_op1b_addB:active{
+    background-color: orange;
+}
+
+#content_registration_country{
+    position: relative;
+    left: 38%;
+}
+
+#content_registration_type{
+    position: relative;
+    left: 45%;
+}
+
+#reg_confirm{
+    display: none;
+    color: red;
+}
+
+/* +++++++++++++++++++++++++++ ABOUT +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONTENT ================================================================================== */ 
+.content_about p{
+    position: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 0px solid black;
+}
+
+
+
+/* FOOTER ================================================================================== */
+
+.footer{
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(0, 15, 40);
+}
+.footer div{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 0px solid rgb(0, 0, 0);
+}
+
+#footer_admin_access_button{
+    border: 5px dashed red !important;
+    box-shadow:2px 4px black !important;
+}
+
+

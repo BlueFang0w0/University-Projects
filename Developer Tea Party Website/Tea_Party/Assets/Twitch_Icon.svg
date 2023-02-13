@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="40"
+   viewBox="0 0 10.583333 10.583334"
+   version="1.1"
+   id="svg1871"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Twitch_Icon.svg">
+  <defs
+     id="defs1865">
+    <rect
+       x="0.81851293"
+       y="0.86862597"
+       width="8.9201205"
+       height="6.2975383"
+       id="rect899" />
+    <rect
+       x="1.1024868"
+       y="1.4532781"
+       width="8.218538"
+       height="3.9255212"
+       id="rect893" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Clean Edges"
+       id="filter2570">
+      <feGaussianBlur
+         stdDeviation="1.24928"
+         result="blur"
+         id="feGaussianBlur2564" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="in"
+         result="composite1"
+         id="feComposite2566" />
+      <feComposite
+         in="composite1"
+         in2="composite1"
+         operator="in"
+         result="fbSourceGraphic"
+         id="feComposite2568" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2572" />
+      <feGaussianBlur
+         id="feGaussianBlur2574"
+         stdDeviation="1.24928"
+         result="blur"
+         in="fbSourceGraphic" />
+      <feComposite
+         in2="blur"
+         id="feComposite2576"
+         in="fbSourceGraphic"
+         operator="in"
+         result="composite1" />
+      <feComposite
+         in2="composite1"
+         id="feComposite2578"
+         in="composite1"
+         operator="in"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.839192"
+     inkscape:cx="22.265306"
+     inkscape:cy="21.545819"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1868">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.530098;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect855"
+       width="10.026122"
+       height="10.042624"
+       x="0.28221646"
+       y="0.25726071"
+       ry="0.69884235" />
+    <path
+       style="fill:#350080;fill-opacity:1;stroke:#350080;stroke-width:0.290969px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1.5382365,1.6470199 1.5207324,6.9100451 4.3389835,6.9486021 4.1639367,8.8571715 6.2119823,7.0064376 H 7.62986 L 9.065242,5.6569438 9.0477358,1.6277413 Z"
+       id="path913-2"
+       sodipodi:nodetypes="ccccccccc" />
+    <text
+       xml:space="preserve"
+       id="text891"
+       style="font-size:2.82222px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect893);"><tspan
+         style="visibility:hidden"
+         x="1.1015625"
+         y="7.9537032"><tspan
+           dx="0 1.557182 1.7129 1.7859364 1.4634752 1.7859359 1.7583761">YouTube</tspan></tspan></text>
+    <path
+       style="fill:#ffffff;stroke:#350080;stroke-width:0.262095px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 1.9886578,1.6370259 1.9722662,6.1973121 4.6113157,6.2307207 4.4473994,7.8844509 6.3652181,6.2808339 H 7.6929388 L 9.0370509,5.1115297 9.0206581,1.6203215 Z"
+       id="path913"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#800080;stroke:#350080;stroke-width:0.423297px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 7.2719996,2.9659187 7.2607814,4.551037"
+       id="path915-6" />
+    <path
+       style="fill:#800080;stroke:#350080;stroke-width:0.423296px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 5.8354257,2.9826229 5.8242075,4.5677413"
+       id="path915-6-2" />
+  </g>
+</svg>

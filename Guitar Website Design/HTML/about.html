@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/master.css">
+        <link rel="preload" as="image" href="Assets/Search_Icon_1.svg">
+        <link rel="preload" as="image" href="Assets/Search_Icon_2.svg">
+        <link rel="preload" as="image" href="Assets/Search_Icon_3.svg">
+        <link rel="preload" as="image" href="Assets/Logo.svg">
+        <title></title>
+    </head>
+    <body id="main">
+        <div class="grid_container">
+            <div class="title">
+                <img src="Assets/Logo.svg" id="main_logo">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu_bar">
+                <a href="index.html" class="button_link " id="menu_bar_home_button" style="color:rgb(255, 255, 255);" >Home</a>
+                <a href="shop.html" class="button_link " style="color:rgb(255, 255, 255);" >Shop</a>
+                <a href="about.html" class="button_link " style="color:rgb(255, 255, 255);" >About</a>
+                <input placeholder="Search With: Tag or Name" id="search" type="search">
+                <button type="button" id="search_submit" class="ui_button_preset" onclick=" ">
+                    <img src="Assets/Search_Icon_1.svg" ></button>
+            </div>
+            <div class="content">
+                <div class="content_sub1 text_preset_title">About US</div>
+                <div class="content_sub1 text_preset_base">This is a guitar selling website where we sell bespoke one of a kind guitars.</div>
+                <div class="content_sub1 text_preset_base">The products sold here are sold in singles, menaing there is no large ammount of stock.</div>
+                <div class="content_sub1 text_preset_base">Website desighned to be modern and minimalistic with its clear and clean design and modern colours.</div>
+            </div>
+            <!--==================================SIDE PANNEL========================================-->
+            <div id="special">
+                <div>
+                    <div class="text_preset_title special_top_titles">LOG IN</div>
+                    <div class="text_preset_base">
+                        <input class= "user_input_N_P_preset special_ui_auth text_preset_base" placeholder="Email" id="email" type="email" autocomplete="login">
+                        <input class= "user_input_N_P_preset special_ui_auth text_preset_base" placeholder="Password" id="password" type="password" autocomplete="password">
+                        <button type="button" id="special_ui_auth_submit" class="button_preset text_preset_base" onclick=" ">Log In</button>
+                        <button type="button" id="special_ui_auth_submit" class="button_preset text_preset_base" onclick="window.location.href='register.html'">Register</button>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="text_preset_title special_top_titles">BASKET</div>
+                    <div class="text_preset_base">
+                        <div id="special_ui_basket_data" class="text_preset_base" >Your basket is empty at the moment...</div>
+                        <div id="special_ui_basket_util" class="text_preset_base" >
+                            <hr>
+                            <button type="button" id="special_ui_basket_chkout" class="button_preset text_preset_base" onclick=" ">Checkout</button>
+                            <button type="button" id="special_ui_basket_chkout" class="button_preset text_preset_base" onclick=" ">Remove Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--==================================FOOTER========================================-->
+            <div class="footer">
+                <div>
+                    <a  href="https://www.twitch.tv/"><img src="Assets/Twitch_Icon.svg"></a>
+                    <a  href="https://www.youtube.com/?gl=GB"><img src="Assets/Youtube_Icon.svg" ></a>  
+                </div>
+                <div class="text_preset_base" style="max-width: 40%;"> © 2021–2021 GFU.net All rights reserved. Powered by Middlesex University™. This is a university project where one must make an e-commerce website. This website is NOT official. © </div>
+                <div><button type="button" id="footer_admin_access_button" class="button_preset text_preset_base" onclick="window.location.href='admin.html'">Administrator Menu</button></div>
+            </div>
+        </div>
+    </body>
+</html>
